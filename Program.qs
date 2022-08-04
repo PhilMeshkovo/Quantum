@@ -4,6 +4,13 @@ namespace Quantum {
     open Microsoft.Quantum.Canon;
 
     @EntryPoint()
+    operation loop() : Unit {
+         for index in 0 .. 15 {
+            let(Re0, Re1, Re2) = zzz();
+            Message($"{Re0},{Re1},{Re2}");
+         }   
+    }
+
     operation zzz() : (Int, Int, Int) 
     {
         mutable Re0 = 0;
