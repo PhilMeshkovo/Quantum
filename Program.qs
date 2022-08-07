@@ -8,6 +8,9 @@ namespace Quantum {
          for index in 0 .. 15 {
             let(Re0, Re1, Re2) = zzz();
             Message($"{Re0},{Re1},{Re2}");
+            if Re2 == 1 {
+                Message("-----");
+            }
          }   
     }
 

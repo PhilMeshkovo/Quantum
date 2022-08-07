@@ -16,12 +16,12 @@ using Microsoft.Quantum.Simulation.Core;
 
 [assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum\",\"Name\":\"loop\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Core\",\"Name\":\"EntryPoint\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":2},\"Item2\":{\"Line\":1,\"Column\":12}}]}}]},\"TypeIdRange\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":2},\"Item2\":{\"Line\":1,\"Column\":12}}]},\"Argument\":{\"Item1\":{\"Case\":\"UnitValue\"},\"Item2\":[],\"Item3\":{\"Case\":\"UnitType\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":12},\"Item2\":{\"Line\":1,\"Column\":14}}]}},\"Offset\":{\"Item1\":5,\"Item2\":4},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/home/phil/Desktop/CustomProjects/Quantum/Program.qs\",\"Position\":{\"Item1\":6,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":15}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"UnitType\"},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
 [assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum\",\"Name\":\"loop\"},\"Attributes\":[],\"SourceFile\":\"/home/phil/Desktop/CustomProjects/Quantum/Program.qs\",\"Position\":{\"Item1\":6,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":15}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum\",\"Name\":\"zzz\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/home/phil/Desktop/CustomProjects/Quantum/Program.qs\",\"Position\":{\"Item1\":13,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":14}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"UnitType\"},\"ReturnType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Int\"},{\"Case\":\"Int\"},{\"Case\":\"Int\"}]]},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum\",\"Name\":\"zzz\"},\"Attributes\":[],\"SourceFile\":\"/home/phil/Desktop/CustomProjects/Quantum/Program.qs\",\"Position\":{\"Item1\":13,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":14}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum\",\"Name\":\"zzz\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/home/phil/Desktop/CustomProjects/Quantum/Program.qs\",\"Position\":{\"Item1\":16,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":14}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"UnitType\"},\"ReturnType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Int\"},{\"Case\":\"Int\"},{\"Case\":\"Int\"}]]},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum\",\"Name\":\"zzz\"},\"Attributes\":[],\"SourceFile\":\"/home/phil/Desktop/CustomProjects/Quantum/Program.qs\",\"Position\":{\"Item1\":16,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":14}},\"Documentation\":[]}")]
 #line hidden
 namespace Quantum
 {
-    [SourceLocation("/home/phil/Desktop/CustomProjects/Quantum/Program.qs", OperationFunctor.Body, 7, 14)]
+    [SourceLocation("/home/phil/Desktop/CustomProjects/Quantum/Program.qs", OperationFunctor.Body, 7, 17)]
     public partial class loop : Operation<QVoid, QVoid>, ICallable
     {
         public loop(IOperationFactory m) : base(m)
@@ -53,6 +53,12 @@ namespace Quantum
                 var (Re0,Re1,Re2) = zzz__.Apply(QVoid.Instance);
 #line 10 "/home/phil/Desktop/CustomProjects/Quantum/Program.qs"
                 Message__.Apply(String.Format("{0},{1},{2}", Re0, Re1, Re2));
+#line 11 "/home/phil/Desktop/CustomProjects/Quantum/Program.qs"
+                if ((Re2 == 1L))
+                {
+#line 12 "/home/phil/Desktop/CustomProjects/Quantum/Program.qs"
+                    Message__.Apply("-----");
+                }
             }
 
 #line hidden
@@ -74,7 +80,7 @@ namespace Quantum
         }
     }
 
-    [SourceLocation("/home/phil/Desktop/CustomProjects/Quantum/Program.qs", OperationFunctor.Body, 14, -1)]
+    [SourceLocation("/home/phil/Desktop/CustomProjects/Quantum/Program.qs", OperationFunctor.Body, 17, -1)]
     public partial class zzz : Operation<QVoid, (Int64,Int64,Int64)>, ICallable
     {
         public zzz(IOperationFactory m) : base(m)
@@ -124,15 +130,15 @@ namespace Quantum
 
         public override Func<QVoid, (Int64,Int64,Int64)> __Body__ => (__in__) =>
         {
-#line 16 "/home/phil/Desktop/CustomProjects/Quantum/Program.qs"
+#line 19 "/home/phil/Desktop/CustomProjects/Quantum/Program.qs"
             var Re0 = 0L;
-#line 17 "/home/phil/Desktop/CustomProjects/Quantum/Program.qs"
+#line 20 "/home/phil/Desktop/CustomProjects/Quantum/Program.qs"
             var Re1 = 0L;
-#line 18 "/home/phil/Desktop/CustomProjects/Quantum/Program.qs"
+#line 21 "/home/phil/Desktop/CustomProjects/Quantum/Program.qs"
             var Re2 = 0L;
 #line hidden
             {
-#line 20 "/home/phil/Desktop/CustomProjects/Quantum/Program.qs"
+#line 23 "/home/phil/Desktop/CustomProjects/Quantum/Program.qs"
                 var q1 = Allocate__.Apply();
 #line hidden
                 bool __arg1__ = true;
@@ -140,7 +146,7 @@ namespace Quantum
                 {
 #line hidden
                     {
-#line 21 "/home/phil/Desktop/CustomProjects/Quantum/Program.qs"
+#line 24 "/home/phil/Desktop/CustomProjects/Quantum/Program.qs"
                         var q2 = Allocate__.Apply();
 #line hidden
                         bool __arg2__ = true;
@@ -148,40 +154,40 @@ namespace Quantum
                         {
 #line hidden
                             {
-#line 22 "/home/phil/Desktop/CustomProjects/Quantum/Program.qs"
+#line 25 "/home/phil/Desktop/CustomProjects/Quantum/Program.qs"
                                 var q3 = Allocate__.Apply();
 #line hidden
                                 bool __arg3__ = true;
                                 try
                                 {
-#line 24 "/home/phil/Desktop/CustomProjects/Quantum/Program.qs"
-                                    Microsoft__Quantum__Intrinsic__H.Apply(q1);
-#line 25 "/home/phil/Desktop/CustomProjects/Quantum/Program.qs"
-                                    Microsoft__Quantum__Intrinsic__H.Apply(q2);
 #line 27 "/home/phil/Desktop/CustomProjects/Quantum/Program.qs"
+                                    Microsoft__Quantum__Intrinsic__H.Apply(q1);
+#line 28 "/home/phil/Desktop/CustomProjects/Quantum/Program.qs"
+                                    Microsoft__Quantum__Intrinsic__H.Apply(q2);
+#line 30 "/home/phil/Desktop/CustomProjects/Quantum/Program.qs"
                                     CCNOT__.Apply((q1, q2, q3));
-#line 29 "/home/phil/Desktop/CustomProjects/Quantum/Program.qs"
+#line 32 "/home/phil/Desktop/CustomProjects/Quantum/Program.qs"
                                     if ((Microsoft__Quantum__Intrinsic__M.Apply(q1) == Result.One))
                                     {
-#line 29 "/home/phil/Desktop/CustomProjects/Quantum/Program.qs"
+#line 32 "/home/phil/Desktop/CustomProjects/Quantum/Program.qs"
                                         Re0 = 1L;
                                     }
 
-#line 30 "/home/phil/Desktop/CustomProjects/Quantum/Program.qs"
+#line 33 "/home/phil/Desktop/CustomProjects/Quantum/Program.qs"
                                     if ((Microsoft__Quantum__Intrinsic__M.Apply(q2) == Result.One))
                                     {
-#line 30 "/home/phil/Desktop/CustomProjects/Quantum/Program.qs"
+#line 33 "/home/phil/Desktop/CustomProjects/Quantum/Program.qs"
                                         Re1 = 1L;
                                     }
 
-#line 31 "/home/phil/Desktop/CustomProjects/Quantum/Program.qs"
+#line 34 "/home/phil/Desktop/CustomProjects/Quantum/Program.qs"
                                     if ((Microsoft__Quantum__Intrinsic__M.Apply(q3) == Result.One))
                                     {
-#line 31 "/home/phil/Desktop/CustomProjects/Quantum/Program.qs"
+#line 34 "/home/phil/Desktop/CustomProjects/Quantum/Program.qs"
                                         Re2 = 1L;
                                     }
 
-#line 32 "/home/phil/Desktop/CustomProjects/Quantum/Program.qs"
+#line 35 "/home/phil/Desktop/CustomProjects/Quantum/Program.qs"
                                     return (Re0, Re1, Re2);
                                 }
 #line hidden
